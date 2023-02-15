@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "nombre": "Llavero mano de Fátima",
+        "precio": 1550,
+        "imagen": "https://luciendoaccesorios.com/wp-content/uploads/2021/12/01-4-290x290.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Llavero con hojitas",
+        "precio": 1620,
+        "imagen": "https://luciendoaccesorios.com/wp-content/uploads/2022/01/06f001ec-205f-4ae9-9451-fd4bd1a61932-300x300.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 3,
+        "nombre": "collar de ágata (temático)",
+        "precio": 1890,
+        "imagen": "https://luciendoaccesorios.com/wp-content/uploads/2022/01/Collar-de-Agata-tematico02-300x300.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "nombre": "collar corbatín",
+        "precio": 1790,
+        "imagen": "https://luciendoaccesorios.com/wp-content/uploads/2022/01/bb533060-baf0-4113-ab33-1dc097cefed5-300x300.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 5,
+        "nombre": "Collar de Ágata con luna",
+        "precio": 3550,
+        "imagen": "https://luciendoaccesorios.com/wp-content/uploads/2022/01/b2342643-5610-4827-9307-2f3b97470062-300x300.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 6,
+        "nombre": "Bombilla de alpaca 15cm con piedra de onix",
+        "precio": 2890,
+        "imagen": "https://luciendoaccesorios.com/wp-content/uploads/2022/01/PicsArt_10-25-06.42.16-300x300.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 7,
+        "nombre": "Piedras de los 7 chakras",
+        "precio": 1400,
+        "imagen": "https://luciendoaccesorios.com/wp-content/uploads/2021/12/fc6a67c6-1d9e-4652-ab9a-aaa2e4871918-300x300.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 8,
+        "nombre": "Dijes Ámbar gatitos",
+        "precio": 2550,
+        "imagen": "https://luciendoaccesorios.com/wp-content/uploads/2022/08/Dijes-ambar-gatitos02-300x300.jpg",
+        "cantidad": 1
+    }, 
+    {
+        "id": 9,
+        "nombre": "Dijes de Rodocrosita",
+        "precio": 2550,
+        "imagen": "https://luciendoaccesorios.com/wp-content/uploads/2022/04/Dijes-de-Rodocrosito03-300x300.jpg",
+        "cantidad": 1
+    }
+]

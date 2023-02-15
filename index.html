@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    
+    <!-- Fonts -->
+    <!-- Tipografias importadas de fonts.google.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel ="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@100;200;300;500;700;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- CDN DE FONT AWESOME -->
+    <link rel="stylesheet" type="text/css" href="../librerias/fontawesome-free-6.2.0-web/css/all.css"> 
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet"> -->
+    
+    <!-- cdn bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Oportuna - Accesorios con buena vibra</title>
+</head>
+<body>
+    <!--==============================Header=================================-->
+    <header>
+        <nav class="nav">
+            <img src="./img/logo-oportuna (1).png" alt="menu" class="menu">
+            <div class="navbar-left">
+              <ul>
+                <li>
+                  <a href="./index.html">Home</a>
+                </li>
+                <li>
+                  <a href="#">Nosotros</a>
+                </li>
+                <li>
+                  <a href="#">Como comprar</a>
+                </li>
+                <li>
+                  <a href="#">Envíos</a>
+                </li>
+                <li>
+                  <a href="/">Contacto</a>
+                </li>
+                <!-- <li>
+                  <a href="/">Others</a>
+                </li> -->
+              </ul>
+            </div>
+        
+            <div class="navbar-right">
+              <ul>
+                <li class="navbar-shopping-cart" id="cantidad">
+                  <img src="./img/shopping-cart.svg" alt="shopping cart"> <!-- icono del carrito -->
+                  <template id="template">
+                    <div>0</div>
+                  </template>
+                  
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <!-- ======================== boton flotante de whatsapp ========================= -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://api.whatsapp.com/send?phone=3764514782&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+        </a>
+
+
+    <!--==============================Carrito de compras=================================-->
+    <div class="container">
+        <h3>Carrito de compras</h3>
+        <hr>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Acción</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+                <tr id="footer">
+                    <th scope="row" colspan=5>Carrito vacío - comience a comprar</th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="row" id="cards"></div>
+    </div>
+
+    <template id="template-card">
+        <div class="col-12 mb-2 col-md-4">
+            <div class = "card">
+                <img src="" alt="" class="card-img-top">
+                <div class = "card-body">
+                    <h5>Título</h5>
+                    <p>Precio</p>
+                    <button class="btn btn-dark">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </template>
+    
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total Productos</th>
+        <td>10</td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">Vaciar todo </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+
+    <template id="template-carrito">
+        <tr>
+            <th scope="row" id></th>
+            <td>Dije</td>
+            <td>1</td>
+            <td>
+                <button class="btn btn-info btn-sm">
+                    +
+                </button>
+                <button class="btn btn-danger btn-sm">
+                    -
+                </button>
+            </td>
+            <td>$ <span>500</span></td>
+        </tr>
+    </template>
+
+    <script src="./app.js"></script>
+    <!-- script src bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
