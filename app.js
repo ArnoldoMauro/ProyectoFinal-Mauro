@@ -79,7 +79,7 @@ const setCarrito = objeto => {
 }
 
 //funcion para mostrar el total de productos comprados en el icono del carrito
-function cantidadTotal () {
+function cantidadTotal (producto) {
     var t = document.querySelector('#template');
     var clone0 = document.importNode(t.content, true);
     clone0.querySelector('div').innerHTML = producto.cantidad;

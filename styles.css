@@ -1,12 +1,22 @@
-/* Style the header with a grey background and some padding */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&display=swap');
+/* font-family: 'Dancing Script', cursive;
+   font-family: 'Open Sans', sans-serif; */
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 .header {
-    overflow: hidden;
+    /* overflow: hidden; */
     position:fixed;
     background-color:lightpink;
     padding: 20px 10px;
   }
   
-  /* Style the header links */
   .header a {
     float: left;
     color: black;
@@ -18,25 +28,23 @@
     border-radius: 4px;
   }
   
-  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  /* estilo para el logo*/
   .header a.logo {
     font-size: 25px;
     font-weight: bold;
   }
   
-  /* Change the background color on mouse-over */
+  /* cabia el background cuando se pasa el mouse por encima del header */
   .header a:hover {
     background-color: #ddd;
     color: black;
   }
   
-  /* Style the active/current link*/
   .header a.active {
-    background-color: dodgerblue;
+    background-color:darkblue;
     color: white;
   }
   
-  /* Float the link section to the right */
   .header-right {
     float:right;
     margin-top: 45px;
@@ -60,8 +68,8 @@
 }
 .float:hover {
 	text-decoration: none;
-	color: #25d366;
-  background-color:#fff;
+	color: #0c638b;
+  background-color:#000
 }
 
 .my-float{
@@ -174,15 +182,343 @@
     margin-top: 15px;
   }
 
-  /* Aplica los cambios para móvil.*/
-/* @media (max-width: 640px) {
-    .menu {
-      display: block;
-    }
-    .navbar-left ul {
-      display: none;
-    }
-    .navbar-email {
-      display: none;
-    }
-}   */
+  /* seccion Como Comprar */
+.contenedorCaja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  
+  /*----------- CAJA ----------- */
+.caja { 
+  margin: auto;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+  color: #ffffff; 
+  width: 60%;
+  font-size: 25px; 
+  font-weight: 400; 
+  text-align: center; 
+  background: #889ccf; 
+  margin: 0 0 25px; 
+  overflow: hidden; 
+  padding: 20px; 
+  border-radius: 35px 0px 35px 0px; 
+  -moz-border-radius: 35px 0px 35px 0px; 
+  -webkit-border-radius: 35px 0px 35px 0px; 
+  border: 2px solid #5878ca;}
+
+  .noticia {
+    font-family: 'Roboto';
+    width: 80%;
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.7;
+    background-color:lemonchiffon;
+    color: #000;
+    padding: 35px;
+    border-radius: 35px 0px 35px 0px; 
+  -moz-border-radius: 35px 0px 35px 0px; 
+  -webkit-border-radius: 35px 0px 35px 0px; 
+  border: 2px solid #5878ca;
+  }
+  
+  div .noticia h3 {
+    font-family: 'Roboto';
+    text-align: justify;
+    color: #000;
+  }
+
+  div .noticia h4 {
+    text-align: justify;
+    color: #000;
+  }
+
+  .titular {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    width: 80%;
+    font-size: 35px;
+    font-weight: 400;
+    margin-left: 60px;
+    color:green;
+  }
+
+  .izquierda {
+  padding: 25px;
+}
+ .nosotros {
+    font-family: 'Roboto';
+    font-size: 22px;
+    padding-left: 30px;    color: rgb(13, 14, 13);
+    text-align: justify;
+  }
+/* seccion Envios */
+  .texto {
+    font-family: 'Roboto';
+    font-size: 22px;
+    width: 100%;
+    text-align: justify;
+  }
+  .intro {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 25px;
+    font-weight: 400;
+    /* background-color: #889ccf; */
+    color: #000;
+    padding: 35px;
+    text-align: justify;
+  }
+
+  div.noticia img.izquierda {
+    float: left;
+    margin-right: 15px;
+    margin-left: 55px;
+    width: 330px;
+    height: 180px;
+  }
+
+  div.reset {
+    clear: both;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 250;
+  }
+
+/* alinear cards de bootstrap */
+cont-externo {
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.7;
+  background: linear-gradient(-90deg, #11998e, #38ef7d);
+}
+
+.card-text {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 350; 
+  line-height: 1.7;
+} 
+
+/* alineacion del boton del formulario */
+#ContentFormulario {
+  background-color: #FFF;
+  margin-left: 100px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content:left;
+  align-items: center;
+}
+.btn .btn-dark {
+  width: 170px;
+  height: 60px;
+  margin-left: 100px;
+  font-size: 40px;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+/* footer */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+	background: #333;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+/* ----- Footer ------*/
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #fff;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 19px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* footer responsive */
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}

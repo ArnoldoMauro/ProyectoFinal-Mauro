@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- cdn bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Como comprar</title>
+</head>
+<body>
+
+    <!--==============================Header=================================-->
+    <header>
+        <nav class="nav">
+            <img src="./img/logo-oportuna (1).png" alt="menu" class="menu">
+            <div class="navbar-left">
+              <ul>
+                <li>
+                  <a href="./index.html">Home</a>
+                </li>
+                <li>
+                  <a href="./nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                  <a href="./piedras.html">Nuestras piedras</a>
+                </li>
+                <li>
+                  <a href="./comprar.html">Como comprar</a>
+                </li>
+                <li>
+                  <a href="./envios.html">Envíos</a>
+                </li>
+                <li>
+                  <a href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+
+            <!--<div class="navbar-right">
+                 <ul>
+                  <li class="navbar-shopping-cart" id="cantidad">
+                    <img src="./img/shopping-cart.svg" alt="shopping cart">  icono del carrito 
+                    <template id="template">
+                      <div>0</div>
+                    </template>
+                    
+                  </li>
+                </ul> 
+              </div>-->
+            
+        </nav>
+    </header> 
+        
+    <!-- ======================== boton flotante de whatsapp ========================= -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=3764514782&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <!-- caja de titulo -->
+    <div class="contenedorCaja">
+      <div class="caja">Como comprar</div>
+    </div>
+    
+    <!--============================== Cards de Bootstrap =================================-->
+    <div class="contenedorCaja">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- card1 -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card border-info mb-3" style="max-width: 25rem;"> 
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxts6o5YLgbSZx1AIt7_OI0sCUjHkNyNHNWA&usqp=CAU" class="card-img-top" alt="...">
+              <div class="card-body"> 
+                <h5 class="card-title">Carrito de compras</h5> 
+                <p class="card-text">El mínimo para comprar por este medio es de 10 ACCESORIOS. <br>
+                  Seleccione el/los productos que le interesan y agréguelos al carrito de compra para proceder con la compra.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- card2 -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card border-info mb-3" style="max-width: 35rem;">
+              <img src="data:image/jpeg;base64,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" class="card-img-top" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Telefónicamente</h5>
+                <p class="card-text">Puede llamarnos ó mandarnos un Whatsapp al (376) 4514782. <br>
+                Nuestros horarios de atención son: <br>
+                Lunes a viernes de 09:00 hs. a 19:00 hs. <br>
+                Sábados de 09:00 hs. a 13:00 hs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- pie de pagina -->
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>Oportuna<span>  Accesorios</span></h3>
+        <p class="footer-links">
+          <a href="./index.html" class="link-1">Home</a>
+          <a href="./nosotros.html">Nosotros</a>
+          <a href="./piedras.html">Nuestras Piedras</a>
+          <a href="./comprar.html">Como Comprar</a>
+          <a href="./envios.html">Envíos</a>
+          <a href="./contacto.html">Contacto</a>
+        </p>
+  
+        <p class="footer-company-name">Oportuna Accesorios © 2023</p>
+      </div>
+  
+      <div class="footer-center">
+  
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Calle 18 #2 - B° Gral. San Martín</span> Ituzaingó, Corrientes</p>
+        </div>
+  
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+54 9 376 451-4782</p>
+        </div>
+  
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">raqueloporto21@gmail.com</a></p>
+        </div>
+  
+      </div>
+  
+      <div class="footer-right">
+  
+        <p class="footer-company-about">
+          <span>Acerca de Nosotros</span>
+          Nos especializamos en la venta de accesorios energéticos conformados con piedras preciosas naturales. Estamos en la ciudad de Ituzaingó, Corrientes. República Argentina.
+        </p>
+  
+        <div class="footer-icons">
+  
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+  
+        </div>
+  
+      </div>
+  
+    </footer>
+
+  </body>
+</html>
